@@ -1,0 +1,153 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Poppins:wght@600;700;800;900&display=swap');
+
+* {
+  @apply box-border;
+}
+
+html {
+  @apply scroll-smooth;
+}
+
+body {
+  @apply font-sans text-black bg-gradient-to-br from-peach-100 via-white to-mint-50;
+  font-feature-settings: "cv11" 1;
+}
+
+/* Memphis Design Elements */
+.memphis-circle {
+  @apply rounded-full;
+}
+
+.memphis-square {
+  @apply rounded-memphis;
+}
+
+.memphis-text {
+  @apply font-display font-black uppercase tracking-tight;
+}
+
+/* Smooth transitions */
+button, input, textarea, select {
+  @apply transition-all duration-200;
+}
+
+/* Focus states */
+input:focus, textarea:focus, select:focus {
+  @apply outline-none ring-2 ring-lilac-500 ring-offset-2;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  @apply w-2 h-2;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-100;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-lilac-400 rounded-full hover:bg-lilac-500;
+}
+
+/* Animation utilities */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-20px) rotate(2deg);
+  }
+}
+
+@keyframes pulse-soft {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
+
+@keyframes bounce-gentle {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+/* Utility classes */
+.scale-102 {
+  transform: scale(1.02);
+}
+
+.rotate-6 {
+  transform: rotate(6deg);
+}
+
+.-rotate-6 {
+  transform: rotate(-6deg);
+}
+
+.-rotate-1 {
+  transform: rotate(-1deg);
+}
+
+.rotate-1 {
+  transform: rotate(1deg);
+}
+
+.-rotate-12 {
+  transform: rotate(-12deg);
+}
+
+/* Memphis pattern background */
+.memphis-bg {
+  background: linear-gradient(135deg, #fdf8f5 0%, #fff5d6 25%, #f0fdf9 50%, #faf7fd 75%, #fdf8f5 100%);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Smooth page transitions */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.3s ease-out;
+}
+
+/* Responsive utilities */
+@media (max-width: 640px) {
+  body {
+    @apply text-sm;
+  }
+
+  .memphis-text {
+    @apply text-2xl;
+  }
+}
