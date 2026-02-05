@@ -1,0 +1,16 @@
+# Node / React
+frontend/node_modules
+frontend/package-lock.json
+frontend/dist
+
+# Docker
+*.log
+
+# IDE
+.vscode
+.idea
+
+# Sistema
+.DS_Store
+Thumbs.db
+
