@@ -106,7 +106,7 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
       <footer className="relative z-10 mt-20 bg-black bg-opacity-5 border-t-2 border-black border-opacity-10 py-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <p className="text-sm font-bold text-black opacity-60">
-            © 2024 TaskFlow. Built with creativity and passion. 🎨
+            © 2025 TaskFlow. Built with creativity and passion. 🎨
           </p>
         </div>
       </footer>
